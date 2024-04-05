@@ -15,6 +15,13 @@ modelShannon = [OpisSymbol(i, 0) for i in range(MODELSIZE)]
 modelSortShannon = [OpisSymbol(i, 0) for i in range(MODELSIZE)]
 
 
+def zmienRozszerzenieNazwy(nazwa, rozszerzenie):
+    base_name = os.path.splitext(nazwa)[0]
+    new_name = f"{base_name}{rozszerzenie}"
+    return new_name
+
+
+
 def wyznaczModel(nazwa):
     try:
         with open(nazwa, "rb") as plik:
