@@ -1,4 +1,6 @@
 import os
+#TODO add a function for making a shannon's tree for file compression
+
 
 MODELSIZE = 256
 BUFSIZE = 512
@@ -63,6 +65,7 @@ def sortujModel(nazwa):
 
 
 if __name__ == "__main__":
+    # Add only if required
     import sys
 
     if len(sys.argv) != 2:
